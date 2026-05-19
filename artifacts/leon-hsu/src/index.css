@@ -109,3 +109,13 @@
     font-weight: 600;
   }
 }
+
+/* Shared identity style — used by both the navbar logo and the hero title.
+   Only the font-size and position differ between the two uses. */
+.nav-logo {
+  font-family: var(--font-serif);
+  font-weight: 700;
+  letter-spacing: 0.1em;   /* matches Tailwind tracking-wider */
+  text-transform: uppercase;
+  color: hsl(var(--foreground));
+}

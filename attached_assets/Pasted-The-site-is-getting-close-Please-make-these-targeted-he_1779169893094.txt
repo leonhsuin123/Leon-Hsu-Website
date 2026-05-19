@@ -1,0 +1,44 @@
+The site is getting close. Please make these targeted header/home typography fixes WITHOUT rewriting the whole project.
+
+1. Mobile hamburger menu alignment:
+- On all mobile/tablet widths where the hamburger menu appears, the hamburger icon/menu button should ALWAYS be right-aligned.
+- It should stay near the right edge of the header.
+- Do not let it drift toward the center or left.
+
+2. Mobile header social icons:
+- The social icons should NOT be inside the hamburger dropdown/menu.
+- Instead, on mobile, the social icons should appear in the middle of the header.
+- They should ALWAYS be center-aligned horizontally in the mobile header.
+- The header should be structured like this on mobile:
+  left side: Leon Hsu logo/text
+  center: social icons
+  right side: hamburger menu
+- Keep the mobile layout clean and prevent overlap at small screen sizes.
+
+3. Desktop header spacing:
+- On desktop only, adjust the spacing so that:
+  the distance between “Leon Hsu” and the Home navigation button is EXACTLY the same as the distance between the Contact navigation button and the Instagram social icon.
+- Keep the navigation page link spacing the same.
+- Space the social icons out slightly more than they are now.
+- The spacing between each social icon must be equal:
+  Instagram to Facebook = Facebook to YouTube.
+- Keep the header balanced and responsive.
+
+4. Home hero title font:
+- The large “Leon Hsu” title in the Home page hero should use EXACTLY the same font family, font weight, letter spacing, capitalization style, and text styling as the “LEON HSU” logo/text in the top-left header.
+- The ONLY differences between the header logo text and the Home hero title should be:
+  1. size
+  2. location
+- This must apply on both desktop and mobile.
+- Do not make the hero title use a different decorative font.
+- If needed, create a shared CSS class/style for both the header logo and the hero title so their formatting stays identical.
+
+Important instructions:
+- Do not rewrite the entire website.
+- Do not change page order.
+- Do not change the current site design beyond these requested fixes.
+- Only edit the files needed for the header and Home hero typography.
+- Make sure desktop and mobile both work correctly.
+- After finishing, summarize exactly which files were changed and what each change did.
+
+

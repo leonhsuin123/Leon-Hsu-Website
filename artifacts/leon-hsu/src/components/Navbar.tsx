@@ -20,7 +20,6 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Close mobile menu on route change
   useEffect(() => {
     setMobileMenuOpen(false);
   }, [location]);
@@ -34,29 +33,45 @@ export default function Navbar() {
     { href: "/contact", label: t('nav.contact') },
   ];
 
+  const socialLinks = (
+    <>
+      <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+        <FaInstagram size={17} />
+      </a>
+      <a href="https://www.facebook.com/share/1XtTDaSJeD/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+        <FaFacebookF size={17} />
+      </a>
+      <a href="https://www.youtube.com/@claudiayin123" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+        <FaYoutube size={17} />
+      </a>
+    </>
+  );
+
   return (
     <header
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
-        isScrolled 
-          ? "bg-background/80 backdrop-blur-md border-border/50 py-3" 
+        isScrolled
+          ? "bg-background/80 backdrop-blur-md border-border/50 py-3"
           : "bg-transparent py-5"
       )}
     >
-      <div className="w-full px-4 md:px-10 flex items-center">
-        
-        {/* Logo - Left, never wraps */}
-        <div className="flex-none">
-          <Link href="/" className="text-xl md:text-2xl font-serif font-bold tracking-wider hover:text-accent transition-colors whitespace-nowrap">
+      {/* ── DESKTOP header ────────────────────────────────────────────── */}
+      {/* flex-1 on both logo and socials = equal gaps on each side of nav */}
+      <div className="hidden md:flex w-full px-10 items-center">
+
+        {/* Logo – left, flex-1 so its free space equals the right side */}
+        <div className="flex-1">
+          <Link href="/" className="nav-logo hover:text-accent transition-colors whitespace-nowrap">
             LEON HSU
           </Link>
         </div>
 
-        {/* Desktop Nav - Center */}
-        <nav className="hidden md:flex flex-1 justify-center space-x-8">
+        {/* Nav – centered, fixed width */}
+        <nav className="flex items-center space-x-8">
           {navLinks.map((link) => (
-            <Link 
-              key={link.href} 
+            <Link
+              key={link.href}
               href={link.href}
               className={cn(
                 "text-sm font-medium tracking-wide transition-colors hover:text-accent relative",
@@ -71,22 +86,12 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Socials & Translate - Right */}
-        <div className="hidden md:flex flex-none ml-auto items-center pl-16">
-          <div className="flex items-center space-x-3">
-            <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-              <FaInstagram size={17} />
-            </a>
-            <a href="https://www.facebook.com/share/1XtTDaSJeD/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-              <FaFacebookF size={17} />
-            </a>
-            <a href="https://www.youtube.com/@claudiayin123" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-              <FaYoutube size={17} />
-            </a>
-            
+        {/* Socials + Translate – flex-1 right, mirrors the logo's flex-1 */}
+        <div className="flex-1 flex justify-end items-center">
+          <div className="flex items-center space-x-5">
+            {socialLinks}
             <div className="w-[1px] h-4 bg-border mx-1" />
-            
-            <button 
+            <button
               onClick={toggle}
               className="flex items-center space-x-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
             >
@@ -95,10 +100,27 @@ export default function Navbar() {
             </button>
           </div>
         </div>
+      </div>
 
-        {/* Mobile Menu Toggle */}
-        <div className="md:hidden flex justify-end">
-          <button 
+      {/* ── MOBILE header ─────────────────────────────────────────────── */}
+      {/* Three zones: logo left | socials center | hamburger right */}
+      <div className="flex md:hidden w-full px-4 items-center">
+
+        {/* Logo – left */}
+        <div className="flex-none">
+          <Link href="/" className="nav-logo hover:text-accent transition-colors whitespace-nowrap">
+            LEON HSU
+          </Link>
+        </div>
+
+        {/* Socials – centered (flex-1 + justify-center) */}
+        <div className="flex-1 flex justify-center items-center space-x-5">
+          {socialLinks}
+        </div>
+
+        {/* Hamburger – right */}
+        <div className="flex-none">
+          <button
             className="text-foreground p-2"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
           >
@@ -107,13 +129,13 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile Menu Overlay */}
+      {/* Mobile dropdown — nav links + translate only, no socials */}
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-background/95 backdrop-blur-xl border-b border-border/50 py-6 px-6 flex flex-col space-y-6 md:hidden shadow-2xl">
           <nav className="flex flex-col space-y-4">
             {navLinks.map((link) => (
-              <Link 
-                key={link.href} 
+              <Link
+                key={link.href}
                 href={link.href}
                 className={cn(
                   "text-lg font-medium",
@@ -124,22 +146,10 @@ export default function Navbar() {
               </Link>
             ))}
           </nav>
-          
-          <div className="flex items-center space-x-6 pt-4 border-t border-border/50">
-            <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">
-              <FaInstagram size={20} />
-            </a>
-            <a href="https://www.facebook.com/share/1XtTDaSJeD/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">
-              <FaFacebookF size={20} />
-            </a>
-            <a href="https://www.youtube.com/@claudiayin123" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">
-              <FaYoutube size={20} />
-            </a>
-          </div>
 
-          <Button 
-            variant="outline" 
-            className="w-full justify-center mt-4 border-border/50"
+          <Button
+            variant="outline"
+            className="w-full justify-center border-border/50"
             onClick={toggle}
           >
             <Globe className="mr-2 h-4 w-4" />
