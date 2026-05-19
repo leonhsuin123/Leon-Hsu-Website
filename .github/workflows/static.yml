@@ -37,17 +37,11 @@ jobs:
 
       - name: Build Leon Hsu site only
         run: pnpm --filter @workspace/leon-hsu run build
-        env:
-          PORT: 5173
-
-
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./artifacts/leon-hsu/dist
+          path: ./artifacts/leon-hsu/dist/public
 
   deploy:
     environment:
