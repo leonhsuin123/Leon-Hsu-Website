@@ -46,8 +46,8 @@ export default function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         
         {/* Logo - Left */}
-        <div className="flex-1">
-          <Link href="/" className="text-xl md:text-2xl font-serif font-bold tracking-wider hover:text-accent transition-colors">
+        <div className="flex-1 -ml-1">
+          <Link href="/" className="text-xl md:text-2xl font-serif font-bold tracking-wider hover:text-accent transition-colors whitespace-nowrap">
             LEON HSU
           </Link>
         </div>
@@ -72,26 +72,28 @@ export default function Navbar() {
         </nav>
 
         {/* Socials & Translate - Right */}
-        <div className="hidden md:flex flex-1 justify-end items-center space-x-5">
-          <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-            <FaInstagram size={18} />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-            <FaFacebookF size={18} />
-          </a>
-          <a href="#" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
-            <FaYoutube size={18} />
-          </a>
-          
-          <div className="w-[1px] h-4 bg-border mx-2" />
-          
-          <button 
-            onClick={toggle}
-            className="flex items-center space-x-1.5 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
-          >
-            <Globe size={16} />
-            <span className="uppercase">{language === 'en' ? 'EN' : '中文'}</span>
-          </button>
+        <div className="hidden md:flex flex-1 justify-end items-center pl-12">
+          <div className="flex items-center space-x-3">
+            <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+              <FaInstagram size={17} />
+            </a>
+            <a href="https://www.facebook.com/share/1XtTDaSJeD/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+              <FaFacebookF size={17} />
+            </a>
+            <a href="https://www.youtube.com/@claudiayin123" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
+              <FaYoutube size={17} />
+            </a>
+            
+            <div className="w-[1px] h-4 bg-border mx-1" />
+            
+            <button 
+              onClick={toggle}
+              className="flex items-center space-x-1 text-sm font-medium text-muted-foreground hover:text-foreground transition-colors"
+            >
+              <Globe size={15} />
+              <span className="uppercase">{language === 'en' ? 'EN' : '中文'}</span>
+            </button>
+          </div>
         </div>
 
         {/* Mobile Menu Toggle */}
@@ -124,13 +126,13 @@ export default function Navbar() {
           </nav>
           
           <div className="flex items-center space-x-6 pt-4 border-t border-border/50">
-            <a href="#" className="text-muted-foreground hover:text-accent">
+            <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">
               <FaInstagram size={20} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-accent">
+            <a href="https://www.facebook.com/share/1XtTDaSJeD/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">
               <FaFacebookF size={20} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-accent">
+            <a href="https://www.youtube.com/@claudiayin123" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent">
               <FaYoutube size={20} />
             </a>
           </div>

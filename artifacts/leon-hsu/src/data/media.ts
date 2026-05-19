@@ -7,22 +7,22 @@ export interface MediaItem {
 export const mediaData: MediaItem[] = [
   {
     id: '1',
-    title: 'Leon Hsu Trio - Live at The Vanguard',
-    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    title: 'Memories of Formosa',
+    embedUrl: 'https://www.youtube.com/embed/A8bbRDBuilA'
   },
   {
     id: '2',
-    title: 'Improvisation on Autumn Leaves',
-    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    title: 'Jacobo Vega-Albela Quintet Live at PAUSA Art House',
+    embedUrl: 'https://www.youtube.com/embed/KhyCUowDq74'
   },
   {
     id: '3',
-    title: 'Masterclass: Modern Voicings',
-    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    title: 'Joshua Mercado Graduate Recital',
+    embedUrl: 'https://www.youtube.com/embed/WKNl7j_hdQ0'
   },
   {
     id: '4',
-    title: 'Original Composition "Midnight"',
-    embedUrl: 'https://www.youtube.com/embed/dQw4w9WgXcQ'
+    title: 'Oriental Folk Song',
+    embedUrl: 'https://www.youtube.com/embed/8oEL4RfiEZk'
   }
 ];

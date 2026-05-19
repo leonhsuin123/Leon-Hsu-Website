@@ -1,0 +1,64 @@
+The first version looks really good. Now I want you to make the following targeted updates WITHOUT rewriting the entire project and WITHOUT changing the overall page structure.
+
+1. Add these real social/media links throughout the site wherever the matching buttons/icons already appear:
+
+Instagram:
+https://www.instagram.com/leonhsumusic/
+
+Facebook:
+https://www.facebook.com/share/1XtTDaSJeD/
+
+YouTube:
+https://www.youtube.com/@claudiayin123
+
+Media page YouTube embeds:
+
+Video 1:
+Title: Memories of Formosa
+URL: https://youtu.be/A8bbRDBuilA?si=mSMRTCBzisndPC1W
+
+Video 2:
+Title: Jacobo Vega-Albela Quintet Live at PAUSA Art House
+URL: https://youtu.be/KhyCUowDq74?si=X0v-ym3XBafg9PZB
+
+Video 3:
+Title: Joshua Mercado Graduate Recital
+URL: https://youtu.be/WKNl7j_hdQ0?si=OI7wHLolhWwN70ah
+
+Video 4:
+Title: Oriental Folk Song
+URL: https://youtu.be/8oEL4RfiEZk?si=GqChlFWiatn7NV9G
+
+Please convert the YouTube links into proper embedded iframe URLs where needed.
+
+2. Update the typography:
+- Bolded text, section titles, page titles, and main heading fonts should more closely resemble the elegant serif/title style from Kai-Min Chang’s website, with a little bit of the bold title feel from Will Hill’s example.
+- Smaller paragraph/body text should feel closer to the clean readable text style from the Yvonne Rogers-style reference: simple, readable, professional, and not overly decorative.
+- Keep the typography elegant and consistent across the whole site.
+
+3. Simplify the Home page:
+- The Home page should only show Leon Hsu’s name, subtitle, and the background/image placeholder.
+- Remove any extra sections underneath the hero area.
+- There should be nothing to scroll to on the Home page.
+- The Home page should fit cleanly within the visible screen height on desktop and mobile.
+
+4. Fix the header spacing:
+- The Instagram/social icon area is currently too close to the Contact navigation button. Add more space between the Contact button and the social/translate icon group.
+- The social buttons and translate button themselves are currently too spaced out from each other. Make that icon group tighter and cleaner.
+- Move the social/translate icon group slightly more to the right if needed.
+- Keep the header balanced and responsive.
+
+5. Fix the top-left site title:
+- “Leon Hsu” in the top-left header should stay on one line.
+- Move it slightly more to the left.
+- Prevent it from wrapping into two lines.
+- Make sure this still works on mobile.
+
+Important instructions:
+- Do not rewrite the entire website.
+- Do not remove existing pages.
+- Do not change the navigation order.
+- Only edit the files needed for these changes.
+- Preserve the current visual direction that already works well.
+- After finishing, summarize exactly what files were changed and what each change did.
+
