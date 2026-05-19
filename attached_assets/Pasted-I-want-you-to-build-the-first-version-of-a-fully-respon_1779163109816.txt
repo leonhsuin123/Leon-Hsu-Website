@@ -1,0 +1,96 @@
+I want you to build the first version of a fully responsive professional website for a jazz pianist named Leon Hsu.
+
+This should be a modern musician/artist portfolio website. The site should feel elegant, clean, artistic, and professional. It should be fully customizable later, so please keep the code organized and easy to edit.
+
+Use these websites as inspiration for layout, formatting, visual flow, navigation, and functionality, but do NOT copy them exactly:
+
+1. https://www.joshuamercadomusic.com/
+2. https://www.kaiminchang.com/
+3. https://www.theewillhill3.com/music
+4. https://www.yvonnerogersmusic.com/
+
+Use these references for inspiration:
+- Joshua Mercado’s site: user-friendly layout
+- Kai-Min Chang’s site: professional and elegant theme
+- William Hill III’s site: font and text style
+- Yvonne Rogers' site: Simple and natural look
+
+The website should have these pages in this exact order in the navigation:
+
+1. Home
+2. About
+3. Music
+4. Media
+5. Events
+6. Contact
+
+Build the project using React, TypeScript, and Tailwind CSS if possible. If the current Replit setup uses another modern frontend stack, use the closest equivalent, but keep the project clean and easy to move to GitHub/Cursor later.
+
+General design direction:
+- Dark, elegant theme.
+- Use a charcoal, off-white, and COOL light blue color palette.
+- Professional typography with strong page titles.
+- Spacious layout with good margins and padding.
+- Subtle animations/fade-ins.
+- Mobile responsive navigation with a hamburger menu that is in the top right corner of the page.
+- Desktop navigation should be clean and centered.
+- Desktop header should feature "Leon Hsu" left-aligned and socials with a translate button right-aligned
+- The translate button should translate the page from English to Mandarin Chinese and vice-versa
+- Include footer with copyright.
+- Use placeholder images for now, but make them easy to replace later.
+- Use placeholder text where biography, events, photos, videos, and music details will go.
+- DO NOT use copyrighted photos from the reference websites. 
+
+Page requirements:
+
+HOME PAGE:
+- Large hero section with Leon Hsu’s name center-aligned.
+- Subtitle: “Pianist / Composer / Educator”.
+- Background image placeholder.
+
+ABOUT PAGE:
+- Professional biography layout.
+- Include a large artist image placeholder.
+- Include several paragraphs of placeholder bio text.
+- Keep the layout elegant and readable.
+- This will need to incorporate Google API (google docs) later so keep the code clean.
+
+MUSIC PAGE:
+- Create sections for releases, featured recordings, and upcoming.
+- Include album/track cards with placeholder cover images.
+- Each card should have title, artist, year, description, and buttons like “Listen on Spotify,” “Apple Music,” and “YouTube” specifically for those three.
+- When the track card is expanded, it should cover a majority of the page
+- Make the design very similar to Joshua Mercado's but still keep it original.
+
+MEDIA PAGE:
+- Include videos with embedded YouTube placeholder cards.
+- Have them be grided with two side by side and the title of the video underneath the embed
+- Keep it visually polished and responsive.
+- Use Kai-Min Chang's page primarily as inspiration but keep it original.
+- This will need to incorporate Google API (google docs) later so keep the code clean.
+
+EVENTS PAGE:
+- Include upcoming events list.
+- Each event should show the date with the time, the performing band with the venue, the city and state, ticket/info button.
+- Include a past events section or archive placeholder.
+- This will need to incorporate Google API (google calendar) later so keep the code clean.
+
+CONTACT PAGE:
+- Include a contact form with name, email, subject, date, and message (all of these should be required EXCEPT for the date).
+- Include a small section to include my email below the contact form.
+- The form does not need to actually send yet, but structure it cleanly so it can be connected later.
+
+Important development instructions:
+- Build this in stages if necessary.
+- Do not overcomplicate the first version.
+- Do not add backend/database features yet.
+- Do not integrate Google APIs yet.
+- Keep components organized.
+- Make the code easy to export to GitHub and continue editing in Cursor.
+- Avoid massive single-file code ONLY if possible.
+- Create reusable components for Navbar, Footer, PageHeader, MusicCard, EventCard, and MediaGrid if appropriate.
+- Make sure the website works in preview before finishing.
+- After building, summarize what files were created or changed and explain how I can customize the content later.
+
+Start by creating the full website skeleton, navigation, pages, styling system, and placeholder content.
+
