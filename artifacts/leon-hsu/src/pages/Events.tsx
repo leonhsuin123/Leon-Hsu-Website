@@ -12,7 +12,7 @@ export default function Events() {
 
   return (
     <div className="min-h-screen pb-32">
-      <PageHeader title={t('events.title')} subtitle="Live performances and upcoming shows." />
+      <PageHeader title={t('events.title')} />
       
       <div className="container mx-auto px-6 max-w-4xl mt-12 space-y-24">
         {/* // TODO: Connect Google Calendar API for events */}

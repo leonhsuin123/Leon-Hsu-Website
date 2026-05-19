@@ -12,7 +12,7 @@ export default function PageHeader({ title, subtitle }: PageHeaderProps) {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="text-4xl md:text-6xl font-serif font-bold tracking-tight mb-4"
+        className="text-4xl md:text-6xl font-serif font-semibold tracking-tight mb-4"
       >
         {title}
       </motion.h1>

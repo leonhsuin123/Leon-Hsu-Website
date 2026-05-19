@@ -43,10 +43,10 @@ export default function Navbar() {
           : "bg-transparent py-5"
       )}
     >
-      <div className="container mx-auto px-6 flex items-center justify-between">
+      <div className="w-full px-4 md:px-10 flex items-center">
         
-        {/* Logo - Left */}
-        <div className="flex-1 -ml-1">
+        {/* Logo - Left, never wraps */}
+        <div className="flex-none">
           <Link href="/" className="text-xl md:text-2xl font-serif font-bold tracking-wider hover:text-accent transition-colors whitespace-nowrap">
             LEON HSU
           </Link>
@@ -72,7 +72,7 @@ export default function Navbar() {
         </nav>
 
         {/* Socials & Translate - Right */}
-        <div className="hidden md:flex flex-1 justify-end items-center pl-12">
+        <div className="hidden md:flex flex-none ml-auto items-center pl-16">
           <div className="flex items-center space-x-3">
             <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
               <FaInstagram size={17} />

@@ -60,13 +60,13 @@
   --secondary-foreground: 30 25% 94%;
   --muted: 240 4% 16%;
   --muted-foreground: 240 5% 65%;
-  --accent: 196 63% 69%;
-  --accent-foreground: 240 5% 8%;
+  --accent: 189 22% 50%;
+  --accent-foreground: 30 25% 94%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 30 25% 94%;
   --border: 240 4% 16%;
   --input: 240 4% 16%;
-  --ring: 196 63% 69%;
+  --ring: 189 22% 50%;
   --radius: 0.5rem;
 }
 
@@ -85,23 +85,27 @@
   --secondary-foreground: 30 25% 94%;
   --muted: 240 4% 16%;
   --muted-foreground: 240 5% 65%;
-  --accent: 196 63% 69%;
-  --accent-foreground: 240 5% 8%;
+  --accent: 189 22% 50%;
+  --accent-foreground: 30 25% 94%;
   --destructive: 0 62.8% 30.6%;
   --destructive-foreground: 30 25% 94%;
   --border: 240 4% 16%;
   --input: 240 4% 16%;
-  --ring: 196 63% 69%;
+  --ring: 189 22% 50%;
 }
 
 @layer base {
   * {
     @apply border-border;
   }
+  html {
+    background-color: hsl(var(--background));
+  }
   body {
     @apply font-sans antialiased bg-background text-foreground;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-serif;
+    font-weight: 600;
   }
 }

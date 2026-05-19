@@ -8,7 +8,7 @@ export default function Media() {
 
   return (
     <div className="min-h-screen pb-24">
-      <PageHeader title={t('media.title')} subtitle="Watch live performances, masterclasses, and original recordings." />
+      <PageHeader title={t('media.title')} />
       
       <div className="container mx-auto px-6 max-w-6xl mt-12">
         <MediaGrid media={mediaData} />

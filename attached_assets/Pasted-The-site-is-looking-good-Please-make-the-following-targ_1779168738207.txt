@@ -1,0 +1,91 @@
+The site is looking good. Please make the following targeted fixes WITHOUT rewriting the entire project and WITHOUT changing the navigation order or removing pages.
+
+1. Desktop header spacing:
+- On desktop only, spread the full header layout farther toward the edges.
+- Move the “Leon Hsu” logo/text much closer to the left edge.
+- Move the translate text/button and social icon group much closer to the right edge.
+- Keep the spacing between the page navigation links themselves mostly the same.
+- Increase the space between “Leon Hsu” and the Home navigation link significantly.
+- Increase the space between the Contact navigation link and the Instagram/social icon group significantly.
+- Keep mobile header behavior mostly unchanged unless needed for responsiveness.
+
+2. Contact page email:
+- The direct inquiry email should be: leonhsumusic@gmail.com
+- Remove the “direct inquiry” box/card entirely.
+- Instead, place the email directly under the Contact page title/content area.
+- The formatting should VERY closely resemble Joshua Mercado’s contact page: simple, centered/clean, no unnecessary box around the email, with the email presented clearly as a clickable mailto link.
+
+3. Music page card layout:
+- The Music page should VERY closely resemble Joshua Mercado’s music page in layout and formatting.
+- On mobile, music cards should appear in a two-column grid instead of a single vertical list.
+- On desktop, music cards should appear four across.
+- Make the cards smaller/tighter on mobile so the two-column layout feels clean and not oversized.
+- Preserve responsive spacing and do not make the page feel cramped.
+
+4. Media page YouTube layout:
+- The YouTube embeds/videos should be in a grid.
+- On mobile, show two video cards per row instead of a single vertical list.
+- Keep the desktop layout clean and responsive as well.
+- Make sure the embedded videos still preserve proper aspect ratio.
+
+5. Media page video title font:
+- The video/media titles should use the smaller/body font used throughout the rest of the site.
+- They should NOT use the large decorative/title font.
+
+6. Global title font weight:
+- The main title fonts throughout the website are currently slightly too bold.
+- Make the title fonts a little skinnier/lighter while keeping the same elegant style.
+- Do not make them too thin; just reduce the weight slightly.
+
+7. Footer:
+- Reformat the footer to match Joshua Mercado’s footer style as closely as possible.
+- The footer should feature the social buttons/icons centered.
+- Directly underneath the centered social buttons, show ONLY the copyright text.
+- Remove “Leon Hsu” from the footer entirely.
+- Keep the footer clean, minimal, centered, and consistent across all pages.
+
+8. Music page section titles:
+- The Music page sections should be titled exactly in this order:
+  1. Releases
+  2. Featured On
+  3. Upcoming Projects
+
+9. Releases section conditional display:
+- Add code/data structure logic so the Releases section checks whether there are any release items to display.
+- If there are no releases, the section should simply display:
+  “Coming Soon”
+- Do not remove the Releases section entirely.
+
+10. Upcoming Projects conditional display:
+- Add code/data structure logic so the Upcoming Projects section is ONLY visible if there are upcoming project items to display.
+- If there are no upcoming project items, hide the Upcoming Projects section completely.
+
+11. Remove page subtitles:
+- On the Media page, delete this subtitle:
+  “watch live performances, masterclasses, and original recordings.”
+- On the Events page, delete this subtitle:
+  “Live performances and upcoming shows”
+- On the Contact page, delete this subtitle:
+  “For bookings, press inquiries, and collaborations.”
+- These pages should show the page title without those subtitles.
+
+12. Website base/background color:
+- Change the base/root background color of the entire website to match the header/footer background color.
+- This should prevent the white overscroll/bounce area from appearing when users scroll past the top or bottom of a page.
+- Apply this to html, body, root/app containers as needed.
+- The white bar should no longer appear; the overscroll/background should match the header/footer color.
+
+13. Accent colors:
+-The accent color of this website should be #64939b rather than the light blue it has now
+-All aspects that feature the light blue should be changed to feature SPECIFICALLY the color #64939b
+
+Important instructions:
+- Do not rewrite the entire website.
+- Do not change the page order.
+- Do not remove the Home, About, Music, Media, Events, or Contact pages.
+- Only edit the files necessary for these changes.
+- Preserve the current design direction that is already working.
+- Keep the site responsive on desktop and mobile.
+- After finishing, summarize exactly which files were changed and what each change did.
+
+
