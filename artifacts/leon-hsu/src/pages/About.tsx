@@ -35,21 +35,16 @@ export default function About() {
               {/* // TODO: Connect Google Docs API for bio content */}
               <h2 className="text-3xl mb-6 text-foreground font-serif">A Voice Rooted in Tradition, Looking to the Future.</h2>
               
-              <p>
-                Leon Hsu is an award-winning jazz pianist, composer, and educator whose work bridges the profound depths of the jazz tradition with a distinctly modern harmonic vocabulary. Known for his sensitive touch and rhythmic vitality, Leon creates soundscapes that are both intimate and expansive, inviting listeners into a world of deep emotional resonance.
-              </p>
+              <p>{t('about.bio1')}</p>
+
+              <p>{t('about.bio2')}</p>
+
+              <p>{t('about.bio3')}</p>
+
+              <p>{t('about.bio4')}</p>
+
+              <p>{t('about.bio5')}</p>
               
-              <p>
-                A graduate of a prestigious conservatory, his early years were steeped in the rigorous study of classical repertoire before a transformative encounter with the recordings of Bill Evans and Thelonious Monk redirected his musical path. This dual foundation is evident in his playing—marked by a crystalline tone, contrapuntal elegance, and an unwavering commitment to the groove.
-              </p>
-              
-              <p>
-                As a performer, Leon has led his trio across renowned stages globally, performing in intimate clubs and major festivals alike. His compositions often draw inspiration from the quiet, unseen moments of urban life—the spaces between conversations, the late-night quiet of a bustling city, and the shifting of seasons.
-              </p>
-              
-              <p>
-                Beyond the stage, Leon is a passionate educator, dedicated to mentoring the next generation of improvisers. He believes that jazz is not just a genre, but a language—one that requires deep listening, rigorous study, and ultimately, the courage to speak one's own truth.
-              </p>
             </motion.div>
           </div>
         </div>
