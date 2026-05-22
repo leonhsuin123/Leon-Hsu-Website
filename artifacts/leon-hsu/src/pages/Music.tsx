@@ -30,7 +30,7 @@ export default function Music() {
         {/* Releases — always shown, "Coming Soon" if empty */}
         <section>
           <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-8 pb-4 border-b border-border/50 text-foreground">
-            Releases
+            {t('music.releases')}
           </h2>
           {releases.length > 0 ? (
             <motion.div
@@ -55,7 +55,7 @@ export default function Music() {
         {featuredOn.length > 0 && (
           <section>
             <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-8 pb-4 border-b border-border/50 text-foreground">
-              Featured On
+              {t('music.featured')}
             </h2>
             <motion.div
               variants={container}
@@ -77,7 +77,7 @@ export default function Music() {
         {upcoming.length > 0 && (
           <section>
             <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-8 pb-4 border-b border-border/50 text-foreground opacity-80">
-              Upcoming Projects
+              {t('music.upcoming')}
             </h2>
             <motion.div
               variants={container}
