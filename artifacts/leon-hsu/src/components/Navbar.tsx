@@ -104,7 +104,7 @@ export default function Navbar() {
 
       {/* ── MOBILE header ─────────────────────────────────────────────── */}
       {/* Three zones: logo left | socials center | hamburger right */}
-      <div className="flex md:hidden w-full px-4 items-center">
+      <div className="flex md:hidden w-full px-4 items-center justify-between">
 
         {/* Logo – left */}
         <div className="flex-none">
