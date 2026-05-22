@@ -113,11 +113,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Socials – centered (flex-1 + justify-center) */}
-        <div className="flex-1 flex justify-center items-center space-x-5">
-          {socialLinks}
-        </div>
-
         {/* Hamburger – right */}
         <div className="flex-none">
           <button
