@@ -11,6 +11,9 @@ export const translations = {
     'home.latest_release': 'Latest Release',
     'home.upcoming_events': 'Upcoming Events',
     'about.title': 'About',
+    'about.bio': 'Leon Hsu is a Taiwanese pianist currently pursuing his master’s degree in jazz performance at William Paterson University, where he studies with Mike LeDonne and Bill Charlap. He holds a Bachelor’s degree in Jazz and Contemporary Media Studies from the Eastman School of Music, where he studied under Gary Versace.
+Leon has performed with the William Paterson Jazz Orchestra under the direction of David Demsey. He has also performed with guest artists including Chris Potter and New York Voices, and appeared with the orchestra at Dizzy’s Club. During undergraduate, he has performed in Eastman’s Jazz Ensemble and New Jazz Ensemble, working with artists including Ingrid Jensen and Carmen Bradford. He was awarded Audience Favorite (2023) and 3rd Place (2025) in the Rubato Piano Competition’s Jazz Division. 
+From 2023 to 2024, Leon served as a ballet accompanist at SUNY Brockport and performed at the Rochester International Jazz Festival. As a sideman, he has appeared on several recordings, including Un-Belonging (Jacobo Vega-Albela, 2024), Crossroads (Haik Demirchian, 2024), Dreams in the Soil (Eric Heveron-Smith, 2024), and Journey in Passion (Stephanie Tateiwa, 2023). In 2025, he toured with the Jacobo Vega-Albela Quintet across New York, New Jersey, and Connecticut. Over the New Year period of 2025–2026, he brought his own band to Taiwan, touring jazz venues and music festivals nationwide with Side Step.',
     'music.title': 'Music',
     'music.featured': 'Featured Releases',
     'music.recordings': 'Recordings',
@@ -42,6 +45,16 @@ export const translations = {
     'home.latest_release': '最新發行',
     'home.upcoming_events': '即將舉行的活動',
     'about.title': '關於',
+    'about.bio': '“The effervescent joy that he takes in making music is palpable, and his spirit lifts those around him.”
+    — Bill Charlap
+    
+    許立揚 Leon Hsu 為來自台灣的爵士鋼琴家與作曲家。畢業於 Eastman School of Music 爵士鋼琴學程，並以全額獎學金取得 William Paterson University 爵士鋼琴碩士學位，師從 Bill Charlap 與 Mike LeDonne。
+    
+    活躍於美國東岸、來自台灣的爵士鋼琴家與作曲家。其音樂風格紮根於傳統爵士語彙（Swing、Bebop），並延伸至當代爵士、自由即興、拉丁爵士與融合音樂，融合古典、R&B 與電子聲響元素，在傳統語彙與跨界聲響之間，發展出兼具結構性與即興感的演奏風格。
+    
+    除爵士演出與錄音外，許立揚亦長期參與跨界音樂創作，曾與 大象體操、羊駝小姐 等獨立樂團合作專輯製作。近年於 Rubato Piano Competition – Jazz Division 獲得多項肯定，包括 2023 年最佳觀眾獎與 2025 年第三名。
+    
+    旅美期間，演出足跡遍及紐約、費城、華盛頓 DC、羅徹斯特等地，曾於 Dizzy's Jazz Club、Chris' Jazz Cafe 等知名場館演出，並於演出與教育計畫中與 Chris Potter、Ingrid Jensen、Carmen Bradford 及 New York Voices 等國際知名音樂家同台。2026 年獲選為 Ravinia Steans Music Institute 爵士計畫研究員，將赴芝加哥與 Billy Childs、John Clayton 等大師合作，並進行原創作品發表。',
     'music.title': '音樂',
     'music.featured': '精選發行',
     'music.recordings': '錄音作品',
