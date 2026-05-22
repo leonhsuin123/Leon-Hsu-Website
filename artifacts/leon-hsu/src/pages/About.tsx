@@ -33,9 +33,7 @@ export default function About() {
               className="w-full lg:w-7/12 prose prose-invert prose-lg max-w-none prose-p:text-muted-foreground prose-p:leading-relaxed prose-headings:font-serif prose-headings:text-foreground"
             >
               {/* // TODO: Connect Google Docs API for bio content */}
-              <h2 className="text-3xl mb-6 text-foreground font-serif">A Voice Rooted in Tradition, Looking to the Future.</h2>
-              
-              <p>{t('about.bio1')}</p>
+              <h2 className="text-3xl mb-6 text-foreground font-serif">{t('about.bio1')}</h2>
 
               <p>{t('about.bio2')}</p>
 
