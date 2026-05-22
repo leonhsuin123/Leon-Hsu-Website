@@ -52,8 +52,8 @@ export default function Navbar() {
       className={cn(
         "fixed top-0 w-full z-50 transition-all duration-300 border-b border-transparent",
         isScrolled
-          ? "bg-background/80 backdrop-blur-md border-border/50 py-4"
-          : "bg-transparent py-6"
+          ? "bg-background/80 backdrop-blur-md border-border/50 py-5"
+          : "bg-transparent py-7"
       )}
     >
       {/* ── DESKTOP header ────────────────────────────────────────────── */}
@@ -68,13 +68,13 @@ export default function Navbar() {
         </div>
 
         {/* Nav – centered, fixed width */}
-        <nav className="flex items-center space-x-12">
+        <nav className="flex items-center space-x-16">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
               className={cn(
-                "text-base font-medium tracking-wide transition-colors hover:text-accent relative",
+                "text-base font-lg tracking-wide transition-colors hover:text-accent relative",
                 location === link.href ? "text-accent" : "text-muted-foreground"
               )}
             >
