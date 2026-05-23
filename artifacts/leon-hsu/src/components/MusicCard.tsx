@@ -66,13 +66,31 @@ export default function MusicCard({ item }: { item: MusicItem }) {
                   </p>
 
                   <div className="space-y-4 w-full">
-                    <Button variant="outline" className="w-full justify-start hover:bg-white hover:text-black transition-colors" size="lg">
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="w-full justify-start hover:bg-green-600 hover:text-black transition-colors hover:border-green-600"
+                      size="lg"
+                    >
+                      <a href={item.spotify} target="_blank" rel="noopener noreferrer">
                       <FaSpotify className="mr-3" size={20} /> Listen on Spotify
                     </Button>
-                    <Button variant="outline" className="w-full justify-start hover:bg-white hover:text-black transition-colors" size="lg">
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="w-full justify-start hover:bg-white hover:text-black transition-colors"
+                      size="lg"
+                    >
+                      <a href={item.applemusic} target="_blank" rel="noopener noreferrer">
                       <FaApple className="mr-3" size={20} /> Listen on Apple Music
                     </Button>
-                    <Button variant="outline" className="w-full justify-start hover:bg-red-600 hover:text-white transition-colors hover:border-red-600" size="lg">
+                    <Button
+                      asChild
+                      variant="outline"
+                      className="w-full justify-start hover:bg-red-600 hover:text-white transition-colors hover:border-red-600"
+                      size="lg"
+                    >
+                      <a href={item.youtube} target="_blank" rel="noopener noreferrer">
                       <FaYoutube className="mr-3" size={20} /> Watch on YouTube
                     </Button>
                   </div>
