@@ -74,6 +74,7 @@ export default function MusicCard({ item }: { item: MusicItem }) {
                     >
                       <a href={item.spotify} target="_blank" rel="noopener noreferrer">
                       <FaSpotify className="mr-3" size={20} /> Listen on Spotify
+                        </a>
                     </Button>
                     <Button
                       asChild
@@ -81,8 +82,9 @@ export default function MusicCard({ item }: { item: MusicItem }) {
                       className="w-full justify-start hover:bg-white hover:text-black transition-colors"
                       size="lg"
                     >
-                      <a href={item.applemusic} target="_blank" rel="noopener noreferrer">
+                      <a href={item.appleMusic} target="_blank" rel="noopener noreferrer">
                       <FaApple className="mr-3" size={20} /> Listen on Apple Music
+                        </a>
                     </Button>
                     <Button
                       asChild
@@ -92,6 +94,7 @@ export default function MusicCard({ item }: { item: MusicItem }) {
                     >
                       <a href={item.youtube} target="_blank" rel="noopener noreferrer">
                       <FaYoutube className="mr-3" size={20} /> Watch on YouTube
+                        </a>
                     </Button>
                   </div>
                 </motion.div>
