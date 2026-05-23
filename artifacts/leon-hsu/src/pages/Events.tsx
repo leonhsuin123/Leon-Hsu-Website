@@ -5,11 +5,12 @@ import { eventsData } from "@/data/events";
 import { useTranslation } from "@/contexts/TranslationContext";
 import { useEffect, useState } from "react";
 import { fetchGoogleEvents } from "@/lib/googleCalendar";
+import type { EventItem } from "@/data/events";
 
 export default function Events() {
   const { t } = useTranslation();
 
-  const [upcomingEvents, setUpcomingEvents] = useState([]);
+  const [upcomingEvents, setUpcomingEvents] = useState<EventItem[]>([]);
 
   const pastEvents = eventsData.filter(e => e.isPast);
 
@@ -55,7 +56,7 @@ export default function Events() {
           </div>
         </section>
 
-        {/* Past Events (unchanged, hardcoded) */}
+        {/* Past Events (hardcoded only) */}
         {pastEvents.length > 0 && (
           <section>
             <h2 className="text-2xl font-serif font-bold mb-8 pb-4 border-b border-border text-foreground opacity-70">
