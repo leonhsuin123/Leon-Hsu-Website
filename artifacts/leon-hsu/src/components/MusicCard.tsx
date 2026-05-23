@@ -64,7 +64,7 @@ export default function MusicCard({ item }: { item: MusicItem }) {
 
                 <motion.div
                   layoutId={`image-${item.id}`}
-                  className="w-full md:w-1/2 aspect-square md:aspect-auto overflow-hidden"
+                  className="w-full md:w-1/2 aspect-square overflow-hidden"
                 >
                   <img
                     src={getYoutubeThumbnail(item.youtube)}
