@@ -10,16 +10,34 @@ import type { EventItem } from "@/data/events";
 export default function Events() {
   const { t } = useTranslation();
 
-  const [upcomingEvents, setUpcomingEvents] = useState<EventItem[]>([]);
+  const [upcomingEvents, setUpcomingEvents] = useState<any[]>([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   const pastEvents = eventsData.filter(e => e.isPast);
 
   useEffect(() => {
     async function loadEvents() {
-      const googleEvents = await fetchGoogleEvents();
-      setUpcomingEvents(googleEvents);
+      try {
+        setLoading(true);
+  
+        const googleEvents = await fetchGoogleEvents();
+  
+        console.log("GOOGLE EVENTS RESULT:", googleEvents);
+  
+        if (!googleEvents || googleEvents.length === 0) {
+          setError("No events returned from Google Calendar");
+        }
+  
+        setUpcomingEvents(googleEvents);
+      } catch (err: any) {
+        console.error("GOOGLE CALENDAR ERROR:", err);
+        setError(err?.message || "Failed to load events");
+      } finally {
+        setLoading(false);
+      }
     }
-
+  
     loadEvents();
   }, []);
 
@@ -36,7 +54,11 @@ export default function Events() {
           </h2>
 
           <div className="flex flex-col">
-            {upcomingEvents.length > 0 ? (
+            {loading ? (
+              <p className="text-muted-foreground py-8">Loading events...</p>
+            ) : error ? (
+              <p className="text-red-400 py-8">{error}</p>
+            ) : upcomingEvents.length > 0 ? (
               upcomingEvents.map((event, index) => (
                 <motion.div
                   key={event.id}
