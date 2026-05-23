@@ -7,6 +7,10 @@ import { Button } from "./ui/button";
 
 export default function MusicCard({ item }: { item: MusicItem }) {
   const [isOpen, setIsOpen] = useState(false);
+  const getYoutubeThumbnail = (url: string) => {
+  const id = url.split("v=")[1]?.split("&")[0];
+  return `https://img.youtube.com/vi/${id}/maxresdefault.jpg`;
+};
 
   return (
     <>
@@ -17,8 +21,15 @@ export default function MusicCard({ item }: { item: MusicItem }) {
         className="group cursor-pointer relative rounded-md overflow-hidden bg-card border border-border/50 hover:border-accent/50 transition-colors flex flex-col"
         whileHover={{ y: -5 }}
       >
-        <motion.div layoutId={`image-${item.id}`} className="aspect-square bg-gradient-to-br from-zinc-800 to-black w-full flex items-center justify-center p-6 text-center">
-          <span className="font-serif text-xl tracking-wider text-white/50 group-hover:text-white/80 transition-colors">{item.title}</span>
+        <motion.div
+          layoutId={`image-${item.id}`}
+          className="aspect-square w-full overflow-hidden"
+        >
+          <img
+            src={getYoutubeThumbnail(item.youtube)}
+            alt={item.title}
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+          />
         </motion.div>
         
         <motion.div layoutId={`content-${item.id}`} className="p-5 flex-1 flex flex-col">
@@ -51,8 +62,15 @@ export default function MusicCard({ item }: { item: MusicItem }) {
                   <X size={24} />
                 </button>
 
-                <motion.div layoutId={`image-${item.id}`} className="w-full md:w-1/2 aspect-square md:aspect-auto bg-gradient-to-br from-zinc-800 to-black flex items-center justify-center p-10 text-center relative">
-                   <span className="font-serif text-3xl md:text-4xl tracking-wider text-white/80">{item.title}</span>
+                <motion.div
+                  layoutId={`image-${item.id}`}
+                  className="w-full md:w-1/2 aspect-square md:aspect-auto overflow-hidden"
+                >
+                  <img
+                    src={getYoutubeThumbnail(item.youtube)}
+                    alt={item.title}
+                    className="w-full h-full object-cover"
+                  />
                 </motion.div>
 
                 <motion.div layoutId={`content-${item.id}`} className="w-full md:w-1/2 p-8 md:p-12 flex flex-col justify-center">
