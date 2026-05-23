@@ -27,7 +27,7 @@ export default function Music() {
 
       <div className="container mx-auto px-6 max-w-6xl space-y-24">
 
-        {/* Releases — always shown, "Coming Soon" if empty */}
+        {/* Releases — always shown, "Coming Soon!" if empty */}
         <section>
           <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-8 pb-4 border-b border-border/50 text-foreground">
             {t('music.releases')}
@@ -47,7 +47,7 @@ export default function Music() {
               ))}
             </motion.div>
           ) : (
-            <p className="text-muted-foreground text-base italic py-4">Coming Soon</p>
+            <p className="text-muted-foreground text-base italic py-4">Coming Soon!</p>
           )}
         </section>
 
