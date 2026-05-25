@@ -5,6 +5,10 @@ import { useTranslation } from "@/contexts/TranslationContext";
 export default function About() {
   const { t } = useTranslation();
 
+  useEffect(() => {
+    document.title = "Leon Hsu | About";
+  }, []);
+  
   return (
     <div className="min-h-screen">
       <PageHeader title={t('about.title')} />
