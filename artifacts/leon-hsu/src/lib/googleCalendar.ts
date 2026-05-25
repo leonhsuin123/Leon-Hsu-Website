@@ -9,8 +9,8 @@ export async function fetchGoogleEvents() {
   );
 
   const data = await res.json();
-  console.log(data);
   console.log("GOOGLE RESPONSE:", data);
+  console.log("STATUS:", res.status);
 
   return (data.items || []).map((event: any, index: number) => {
     const location = event.location || "";
