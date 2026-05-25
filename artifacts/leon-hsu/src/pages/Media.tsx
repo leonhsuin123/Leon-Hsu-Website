@@ -11,8 +11,8 @@ export default function Media() {
     document.title = "Leon Hsu | Media";
   }, []);
 
-  const performances = mediaData;
-  const projects = [];
+  const performances = mediaData.filter(m => m.section === "performances");
+  const projects = mediaData.filter(m => m.section === "projects");
 
   return (
     <div className="min-h-screen pb-24">
