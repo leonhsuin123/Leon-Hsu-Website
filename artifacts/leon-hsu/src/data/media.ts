@@ -2,27 +2,38 @@ export interface MediaItem {
   id: string;
   title: string;
   embedUrl: string;
+  section: "performances" | "projects";
 }
 
 export const mediaData: MediaItem[] = [
   {
     id: '1',
     title: 'Memories of Formosa',
-    embedUrl: 'https://www.youtube.com/embed/A8bbRDBuilA'
+    embedUrl: 'https://www.youtube.com/embed/A8bbRDBuilA',
+    section: 'performances'
   },
   {
     id: '2',
     title: 'Jacobo Vega-Albela Quintet Live at PAUSA Art House',
-    embedUrl: 'https://www.youtube.com/embed/KhyCUowDq74'
+    embedUrl: 'https://www.youtube.com/embed/KhyCUowDq74',
+    section: 'performances'
   },
   {
     id: '3',
     title: 'Joshua Mercado Graduate Recital',
-    embedUrl: 'https://www.youtube.com/embed/WKNl7j_hdQ0'
+    embedUrl: 'https://www.youtube.com/embed/WKNl7j_hdQ0',
+    section: 'performances'
   },
   {
     id: '4',
     title: 'Oriental Folk Song',
-    embedUrl: 'https://www.youtube.com/embed/8oEL4RfiEZk'
+    embedUrl: 'https://www.youtube.com/embed/8oEL4RfiEZk',
+    section: 'performances'
+  },
+  {
+    id: '5',
+    title: 'Oriental Folk Song',
+    embedUrl: 'https://www.youtube.com/embed/8oEL4RfiEZk',
+    section: 'projects'
   }
 ];
