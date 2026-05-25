@@ -1,8 +1,13 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/contexts/TranslationContext";
 
 export default function Home() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = "Leon Hsu | Home";
+  }, []);
 
   return (
     <div className="h-screen overflow-hidden">
