@@ -26,12 +26,32 @@ function parseCityState(location: string) {
   return { city: "", state: "" };
 }
 
+function decodeHtml(text: string) {
+  return text
+    .replace(/&amp;/g, "&")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">");
+}
+
 function extractTicketUrl(description: string) {
-  const match = description.match(/(?:https?:\/\/)?(?:www\.)?[^\s<]+\.[^\s<]+/);
+  const decoded = decodeHtml(description);
 
-  if (!match) return "";
+  const hrefMatch = decoded.match(/href=["']([^"']+)["']/i);
 
-  let url = match[0];
+  let url =
+    hrefMatch?.[1] ||
+    decoded
+      .replace(/<[^>]*>/g, " ")
+      .match(/(?:https?:\/\/)?(?:www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s<]*)?/)?.[0] ||
+    "";
+
+  url = decodeHtml(url).trim();
+
+  if (!url) return "";
+
+  url = url.replace(/^https?:\/\/href=["']?/i, "");
 
   if (!url.startsWith("http://") && !url.startsWith("https://")) {
     url = `https://${url}`;
@@ -41,8 +61,13 @@ function extractTicketUrl(description: string) {
 }
 
 function removeUrls(description: string) {
-  return description
-    .replace(/(?:https?:\/\/)?(?:www\.)?[^\s<]+\.[^\s<]+/g, "")
+  const decoded = decodeHtml(description);
+
+  return decoded
+    .replace(/<a\b[^>]*>.*?<\/a>/gi, "")
+    .replace(/(?:https?:\/\/)?(?:www\.)?[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}(?:\/[^\s<]*)?/g, "")
+    .replace(/<[^>]*>/g, "")
+    .replace(/\s+/g, " ")
     .trim();
 }
 
