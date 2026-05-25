@@ -17,9 +17,9 @@ export default function Footer() {
         <>
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/home-bg.png')" }}
+            style={{ backgroundImage: "url('/Leon-Hsu-Website/home-bg.png')" }}
           />
-          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/70 to-background" />
         </>
       )}
 
