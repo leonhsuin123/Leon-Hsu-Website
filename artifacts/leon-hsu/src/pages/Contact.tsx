@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
@@ -25,6 +25,10 @@ type ContactFormValues = z.infer<typeof contactSchema>;
 export default function Contact() {
   const { t } = useTranslation();
   const [isSubmitted, setIsSubmitted] = useState(false);
+  
+  useEffect(() => {
+    document.title = "Leon Hsu | Contact";
+  }, []);
 
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactSchema),
