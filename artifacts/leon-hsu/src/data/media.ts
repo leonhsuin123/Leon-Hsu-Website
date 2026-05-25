@@ -15,25 +15,25 @@ export const mediaData: MediaItem[] = [
   {
     id: '2',
     title: 'Major Advance by Joshua Mercado',
-    embedUrl: 'https://youtu.be/0bz4XAWMeI0',
+    embedUrl: 'https://www.youtube.com/watch?v=0bz4XAWMeI0',
     section: 'performances'
   },
    {
     id: '3',
     title: 'Lush Life by Billy Strayhorn',
-    embedUrl: 'https://youtu.be/aSbsZdi_C-M',
+    embedUrl: 'https://www.youtube.com/watch?v=aSbsZdi_C-M',
     section: 'performances'
   },
    {
     id: '4',
     title: 'New Moon by Steve Grossman & 丟丟銅仔',
-    embedUrl: 'https://youtu.be/kxOFvckfDs0',
+    embedUrl: 'https://www.youtube.com/watch?v=kxOFvckfDs0',
     section: 'performances'
   },
   {
     id: '5',
     title: 'Oriental Folk Song by Wayne Shorter',
-    embedUrl: 'https://www.youtube.com/embed/8oEL4RfiEZk',
+    embedUrl: 'https://www.youtube.com/watch?v=8oEL4RfiEZk',
     section: 'performances'
   },
   {
@@ -51,31 +51,31 @@ export const mediaData: MediaItem[] = [
     {
     id: '8',
     title: 'Time After Time',
-    embedUrl: 'https://youtu.be/d1UGdQczo4Y',
+    embedUrl: 'https://www.youtube.com/watch?v=d1UGdQczo4Y',
     section: 'performances'
   },
   {
     id: '9',
     title: "《It's Our Time》Official MV",
-    embedUrl: 'https://youtu.be/6BL_tgQtx-Q?si=PPraPi2Lrq2RezaC',
+    embedUrl: 'https://www.youtube.com/watch?v=6BL_tgQtx-Q',
     section: 'projects'
   },
   {
     id: '10',
     title: 'Bedtime - Animation Scoring',
-    embedUrl: 'https://youtu.be/Pqwt4btku9E?si=dUJpUfHZFIWQwmY_',
+    embedUrl: 'https://www.youtube.com/watch?v=Pqwt4btku9E',
     section: 'projects'
   },
   {
     id: '11',
     title: 'Samsung QLED TV Commercial Scoring',
-    embedUrl: 'https://youtu.be/JGBiBJgZ6bY?si=lIVzi4flCCir6Rp-',
+    embedUrl: 'https://www.youtube.com/watch?v=JGBiBJgZ6bY',
     section: 'projects'
   },
   {
     id: '12',
     title: 'Clouds - Animation Scoring',
-    embedUrl: 'https://youtu.be/D6CyW9q2XW4?si=S0A6fZCEWfYkQSm9',
+    embedUrl: 'https://www.youtube.com/watch?v=D6CyW9q2XW4',
     section: 'projects'
   }
 ];
