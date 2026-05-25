@@ -10,9 +10,9 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="h-screen overflow-hidden">
+    <div className="min-h-screen overflow-hidden -mb-32 pb-32">
       {/* Hero — fills exactly the viewport, nothing to scroll */}
-      <section className="relative h-full flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 z-0"
