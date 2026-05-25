@@ -1,11 +1,11 @@
 import { useTranslation } from "@/contexts/TranslationContext";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
-import { useLocation } from "react-router-dom";
+import { useLocation } from "wouter";
 
 export default function Footer() {
   const { t } = useTranslation();
-  const location = useLocation();
-  const isHome = location.pathname === "/" || location.pathname === "/Leon-Hsu-Website/";
+  const [location] = useLocation();
+  const isHome = location === "/" || location === "/Leon-Hsu-Website/";
 
   return (
     <footer
