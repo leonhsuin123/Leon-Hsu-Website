@@ -9,13 +9,13 @@ export default function Footer() {
 
   return (
     <footer
-      className={`border-t border-border/40 ${
+      className={`relative border-t border-border/40 ${
         isHome
-          ? "bg-gradient-to-t from-background via-background/80 to-transparent"
-          : "bg-background"
+          ? "bg-gradient-to-t from-background via-background/95 to-background/20 pt-20 pb-8"
+          : "bg-background py-8"
       }`}
     >
-      <div className="flex flex-col items-center gap-4">
+      <div className="relative z-10 flex flex-col items-center gap-4">
         <div className="flex items-center space-x-6">
           <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
             <FaInstagram size={20} />
