@@ -23,7 +23,7 @@ export default function Media() {
         {/* Performances */}
         <section>
           <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-8 pb-4 border-b border-border/50 text-foreground">
-            Performances
+            {t('media.performances')}
           </h2>
           <MediaGrid media={performances} />
         </section>
@@ -32,7 +32,7 @@ export default function Media() {
         {projects.length > 0 && (
           <section>
             <h2 className="text-2xl md:text-3xl font-serif font-semibold mb-8 pb-4 border-b border-border/50 text-foreground">
-              Projects
+              {t('media.projects')}
             </h2>
             <MediaGrid media={projects} />
           </section>
