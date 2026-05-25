@@ -16,7 +16,7 @@ export default function Home() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 z-0"
-          style={{ backgroundImage: "url('/home-bg.png')" }}
+          style={{ backgroundImage: "url('/Leon-Hsu-Website/home-bg.png')" }}
         />
         {/* Dark atmospheric background */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-800/40 via-background to-background z-0" />
