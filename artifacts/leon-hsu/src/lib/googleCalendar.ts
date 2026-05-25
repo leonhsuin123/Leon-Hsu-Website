@@ -27,12 +27,23 @@ function parseCityState(location: string) {
 }
 
 function extractTicketUrl(description: string) {
-  const match = description.match(/https?:\/\/[^\s<]+/);
-  return match ? match[0] : "";
+  const match = description.match(/(?:https?:\/\/)?(?:www\.)?[^\s<]+\.[^\s<]+/);
+
+  if (!match) return "";
+
+  let url = match[0];
+
+  if (!url.startsWith("http://") && !url.startsWith("https://")) {
+    url = `https://${url}`;
+  }
+
+  return url;
 }
 
 function removeUrls(description: string) {
-  return description.replace(/https?:\/\/[^\s<]+/g, "").trim();
+  return description
+    .replace(/(?:https?:\/\/)?(?:www\.)?[^\s<]+\.[^\s<]+/g, "")
+    .trim();
 }
 
 export async function fetchGoogleEvents() {
