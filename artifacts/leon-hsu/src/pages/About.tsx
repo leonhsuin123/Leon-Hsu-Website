@@ -29,10 +29,9 @@ export default function About() {
                 <img
                   src="/Leon-Hsu-Website/about.png"
                   alt="Leon Hsu"
-                  className="w-full h-full object-cover"
+                  className="w-full h-full object-cover opacity-100"
                 />
               </div>
-              <div className="absolute inset-0 bg-black/20 mix-blend-overlay"></div>
             </motion.div>
 
             <motion.div 
