@@ -41,7 +41,7 @@ export const musicData: MusicItem[] = [
     description: ' ',
     spotify: 'https://open.spotify.com/track/5XKomIeis5YoEt7ZSCQJlX?si=1523adbf315447a1',
     appleMusic: 'https://music.apple.com/us/album/awake-feat-eq-zhu/1840624886?i=1840624989',
-    youtube: 'https://youtu.be/Ct1MQ3yOi0k?si=1HPZkyBLJcwJKfqp',
+    youtube: 'https://www.youtube.com/watch?v=Ct1MQ3yOi0k&list=RDCt1MQ3yOi0k&start_radio=1',
     section: 'featured_on'
   }
   // To add releases: { id, title, artist, year, description, section: 'releases' }
