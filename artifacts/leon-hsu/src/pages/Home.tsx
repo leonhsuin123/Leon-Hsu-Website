@@ -23,7 +23,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-800/40 via-background to-background z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30 z-0" />
 
-        <div className="relative z-10 flex flex-col items-center text-center px-6 -translate-y-10 md:translate-y-0">
+        <div className="relative z-10 flex flex-col items-center text-center px-6 -translate-y-14 md:translate-y-0">
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
