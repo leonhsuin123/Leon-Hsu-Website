@@ -11,7 +11,7 @@ export default function Footer() {
     <footer
       className={`relative z-20 border-t border-border/40 ${
         isHome
-          ? "-mt-32 pt-16 pb-8 bg-gradient-to-b from-transparent via-background/70 to-background"
+          ? "-mt-32 pt-16 pb-8 bg-gradient-to-b from-transparent from-25% via-background/80 via-55% to-background"
           : "bg-background py-8"
       }`}
     >
