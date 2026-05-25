@@ -16,7 +16,7 @@ export default function Home() {
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 z-0"
-          style={{ backgroundImage: "url('home-bg.png')" }}
+          style={{ backgroundImage: "url('/home-bg.png')" }}
         />
 
         {/* Dark atmospheric background */}
