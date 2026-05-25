@@ -26,7 +26,11 @@ export default function About() {
             >
               {/* Placeholder artist image */}
               <div className="absolute inset-0 flex items-center justify-center opacity-30">
-                <span className="font-serif text-2xl tracking-widest rotate-[-90deg]">LEON HSU</span>
+                <img
+                  src="/Leon-Hsu-Website/about.png"
+                  alt="Leon Hsu"
+                  className="w-full h-full object-cover"
+                />
               </div>
               <div className="absolute inset-0 bg-black/20 mix-blend-overlay"></div>
             </motion.div>
