@@ -16,7 +16,7 @@ export const eventsData: EventItem[] = [
     time: '9:00 PM',
     band: 'Woody Shaw Ensemble',
     venue: "Dizzy's Club",
-    city: 'Manhattan, NYC',
+    city: 'New York',
     state: 'NY',
     isPast: true
   },
@@ -55,7 +55,7 @@ export const eventsData: EventItem[] = [
     date: 'January 3, 2026',
     time: '8:00 PM',
     band: 'Leon Hsu Quartet',
-    venue: "爵式 WiJazz Records",
+    venue: "WiJazz Records",
     city: 'Kaoshiung',
     state: 'Taiwan',
     isPast: true
