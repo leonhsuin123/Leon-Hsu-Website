@@ -13,6 +13,11 @@ export default function Home() {
     <div className="h-screen overflow-hidden">
       {/* Hero — fills exactly the viewport, nothing to scroll */}
       <section className="relative h-full flex items-center justify-center overflow-hidden">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 z-0"
+          style={{ backgroundImage: "url('/home-bg.jpg')" }}
+        />
         {/* Dark atmospheric background */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-800/40 via-background to-background z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30 z-0" />
