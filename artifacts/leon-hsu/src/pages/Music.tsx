@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import PageHeader from "@/components/PageHeader";
 import MusicCard from "@/components/MusicCard";
@@ -6,6 +7,10 @@ import { useTranslation } from "@/contexts/TranslationContext";
 
 export default function Music() {
   const { t } = useTranslation();
+
+  useEffect(() => {
+    document.title = "Leon Hsu | Music";
+  }, []);
 
   const releases = musicData.filter(m => m.section === 'releases');
   const featuredOn = musicData.filter(m => m.section === 'featured_on');
