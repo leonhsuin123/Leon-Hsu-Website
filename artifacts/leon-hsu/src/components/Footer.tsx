@@ -9,20 +9,12 @@ export default function Footer() {
 
   return (
     <footer
-      className={`relative overflow-hidden border-t border-border/40 ${
-        isHome ? "pt-20 pb-8" : "bg-background py-8"
+      className={`relative z-20 border-t border-border/40 ${
+        isHome
+          ? "-mt-32 pt-16 pb-8 bg-gradient-to-b from-transparent via-background/70 to-background"
+          : "bg-background py-8"
       }`}
     >
-      {isHome && (
-        <>
-          <div
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-            style={{ backgroundImage: "url('/Leon-Hsu-Website/home-bg.png')" }}
-          />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-background/70 to-background" />
-        </>
-      )}
-
       <div className="relative z-10 flex flex-col items-center gap-4">
         <div className="flex items-center space-x-6">
           <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
