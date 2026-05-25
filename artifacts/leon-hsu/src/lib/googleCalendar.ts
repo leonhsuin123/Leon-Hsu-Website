@@ -26,6 +26,15 @@ function parseCityState(location: string) {
   return { city: "", state: "" };
 }
 
+function extractTicketUrl(description: string) {
+  const match = description.match(/https?:\/\/[^\s<]+/);
+  return match ? match[0] : "";
+}
+
+function removeUrls(description: string) {
+  return description.replace(/https?:\/\/[^\s<]+/g, "").trim();
+}
+
 export async function fetchGoogleEvents() {
   const now = new Date().toISOString();
 
@@ -48,6 +57,10 @@ export async function fetchGoogleEvents() {
     const startRaw = event.start?.dateTime || event.start?.date || "";
     const startDate = new Date(startRaw);
 
+    const description = event.description || "";
+    const ticketUrl = extractTicketUrl(description);
+    const band = removeUrls(description);
+
     return {
       id: event.id || index,
 
@@ -65,10 +78,11 @@ export async function fetchGoogleEvents() {
         : "",
 
       venue: event.summary || "Untitled Event",
-      band: event.description || "",
+      band,
       city,
       state,
       isPast: false,
+      ticketUrl,
     };
   });
 }
