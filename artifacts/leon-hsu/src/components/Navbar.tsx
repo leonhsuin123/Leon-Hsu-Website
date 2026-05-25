@@ -56,18 +56,22 @@ export default function Navbar() {
           : "bg-transparent py-7"
       )}
     >
-      {/* ── DESKTOP header ────────────────────────────────────────────── */}
-      {/* flex-1 on both logo and socials = equal gaps on each side of nav */}
       <div className="hidden md:flex w-full px-10 items-center">
-
-        {/* Logo – left, flex-1 so its free space equals the right side */}
         <div className="flex-1">
-          <Link href="/" className="nav-logo hover:text-accent transition-colors whitespace-nowrap">
+          <Link
+            href="/"
+            className={cn(
+              "nav-logo transition-colors whitespace-nowrap relative",
+              location === "/" ? "text-accent" : "text-muted-foreground hover:text-accent"
+            )}
+          >
             LEON HSU
+            {location === "/" && (
+              <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-accent opacity-50" />
+            )}
           </Link>
         </div>
 
-        {/* Nav – centered, fixed width */}
         <nav className="flex items-center space-x-16">
           {navLinks.map((link) => (
             <Link
@@ -86,7 +90,6 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* Socials + Translate – flex-1 right, mirrors the logo's flex-1 */}
         <div className="flex-1 flex justify-end items-center">
           <div className="flex items-center space-x-5">
             {socialLinks}
@@ -102,18 +105,19 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* ── MOBILE header ─────────────────────────────────────────────── */}
-      {/* Three zones: logo left | socials center | hamburger right */}
       <div className="flex md:hidden w-full px-4 items-center justify-between">
-
-        {/* Logo – left */}
         <div className="flex-none">
-          <Link href="/" className="nav-logo hover:text-accent transition-colors whitespace-nowrap">
+          <Link
+            href="/"
+            className={cn(
+              "nav-logo transition-colors whitespace-nowrap relative",
+              location === "/" ? "text-accent" : "text-muted-foreground hover:text-accent"
+            )}
+          >
             LEON HSU
           </Link>
         </div>
 
-        {/* Hamburger – right */}
         <div className="flex-none">
           <button
             className="text-foreground p-2"
@@ -124,7 +128,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Mobile dropdown — nav links + translate only, no socials */}
       {mobileMenuOpen && (
         <div className="absolute top-full left-0 w-full bg-background/95 backdrop-blur-xl border-b border-border/50 py-6 px-6 flex flex-col space-y-6 md:hidden shadow-2xl">
           <nav className="flex flex-col space-y-4">
