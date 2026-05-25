@@ -60,15 +60,9 @@ export default function Navbar() {
         <div className="flex-1">
           <Link
             href="/"
-            className={cn(
-              "nav-logo transition-colors whitespace-nowrap relative",
-              location === "/" ? "text-accent" : "text-muted-foreground hover:text-accent"
-            )}
+            className="nav-logo !text-muted-foreground hover:!text-accent transition-colors whitespace-nowrap"
           >
             LEON HSU
-            {location === "/" && (
-              <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-accent opacity-50" />
-            )}
           </Link>
         </div>
 
@@ -109,10 +103,7 @@ export default function Navbar() {
         <div className="flex-none">
           <Link
             href="/"
-            className={cn(
-              "nav-logo transition-colors whitespace-nowrap relative",
-              location === "/" ? "text-accent" : "text-muted-foreground hover:text-accent"
-            )}
+            className="nav-logo !text-muted-foreground hover:!text-accent transition-colors whitespace-nowrap"
           >
             LEON HSU
           </Link>
