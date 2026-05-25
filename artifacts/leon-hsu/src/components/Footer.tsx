@@ -9,12 +9,20 @@ export default function Footer() {
 
   return (
     <footer
-      className={`relative border-t border-border/40 ${
-        isHome
-          ? "bg-gradient-to-t from-background via-background/95 to-background/20 pt-20 pb-8"
-          : "bg-background py-8"
+      className={`relative overflow-hidden border-t border-border/40 ${
+        isHome ? "pt-20 pb-8" : "bg-background py-8"
       }`}
     >
+      {isHome && (
+        <>
+          <div
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: "url('/home-bg.png')" }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent" />
+        </>
+      )}
+
       <div className="relative z-10 flex flex-col items-center gap-4">
         <div className="flex items-center space-x-6">
           <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
@@ -27,6 +35,7 @@ export default function Footer() {
             <FaYoutube size={20} />
           </a>
         </div>
+
         <p className="text-xs text-muted-foreground tracking-wide">
           &copy; {new Date().getFullYear()} Leon Hsu. {t('footer.rights')}
         </p>
