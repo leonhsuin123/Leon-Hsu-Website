@@ -42,7 +42,7 @@ export default function Events() {
     <div className="min-h-screen pb-32">
       <PageHeader title={t('events.title')} />
 
-      <div className="container mx-auto px-6 max-w-4xl mt-12 space-y-24">
+      <div className="w-full mx-auto px-6 lg:px-32 mt-12 space-y-24">
 
         {/* Upcoming Events */}
         <section>
