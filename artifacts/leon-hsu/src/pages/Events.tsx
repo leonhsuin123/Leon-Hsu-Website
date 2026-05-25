@@ -10,7 +10,7 @@ import type { EventItem } from "@/data/events";
 export default function Events() {
   const { t } = useTranslation();
 
-  const [upcomingEvents, setUpcomingEvents] = useState<any[]>([]);
+  const [upcomingEvents, setUpcomingEvents] = useState<EventItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
@@ -20,15 +20,12 @@ export default function Events() {
     async function loadEvents() {
       try {
         setLoading(true);
-  
+        setError(null);
+
         const googleEvents = await fetchGoogleEvents();
-  
+
         console.log("GOOGLE EVENTS RESULT:", googleEvents);
-  
-        if (!googleEvents || googleEvents.length === 0) {
-          setError("No events returned from Google Calendar");
-        }
-  
+
         setUpcomingEvents(googleEvents);
       } catch (err: any) {
         console.error("GOOGLE CALENDAR ERROR:", err);
@@ -37,7 +34,7 @@ export default function Events() {
         setLoading(false);
       }
     }
-  
+
     loadEvents();
   }, []);
 
