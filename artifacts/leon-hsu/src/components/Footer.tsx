@@ -1,11 +1,20 @@
 import { useTranslation } from "@/contexts/TranslationContext";
 import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 export default function Footer() {
   const { t } = useTranslation();
+  const location = useLocation();
+  const isHome = location.pathname === "/" || location.pathname === "/Leon-Hsu-Website/";
 
   return (
-    <footer className="w-full border-t border-border/30 bg-background py-10">
+    <footer
+      className={`border-t border-border/40 ${
+        isHome
+          ? "bg-gradient-to-t from-background via-background/80 to-transparent"
+          : "bg-background"
+      }`}
+    >
       <div className="flex flex-col items-center gap-4">
         <div className="flex items-center space-x-6">
           <a href="https://www.instagram.com/leonhsumusic/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-accent transition-colors">
