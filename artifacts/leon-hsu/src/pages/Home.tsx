@@ -15,7 +15,7 @@ export default function Home() {
       <section className="absolute inset-0 flex items-center justify-center overflow-hidden">
         {/* Background image */}
         <div
-          className="absolute inset-0 bg-cover bg-[position:calc(50%+8rem)_60%] md:bg-center bg-no-repeat opacity-40 z-0"
+          className="absolute inset-0 bg-cover bg-[position:calc(50%+9rem)_80%] md:bg-center bg-no-repeat opacity-40 z-0"
           style={{ backgroundImage: "url('/home-bg.png')" }}
         />
 
