@@ -27,7 +27,7 @@ export default function About() {
               {/* Placeholder artist image */}
               <div className="absolute inset-0 flex items-center justify-center">
                 <img
-                  src="/Leon-Hsu-Website/about.png"
+                  src="/about.png"
                   alt="Leon Hsu"
                   className="w-full h-full object-cover opacity-100"
                 />
