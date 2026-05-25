@@ -31,7 +31,6 @@ export default function EventCard({ event }: { event: EventItem }) {
       
       <div className="mb-6 md:mb-0 md:w-2/5">
         <h3 className="text-2xl font-serif font-semibold text-foreground mb-1 group-hover:text-accent transition-colors">{event.venue}</h3>
-        <p className="text-muted-foreground">{event.band}</p>
       </div>
       
       <div className="mb-6 md:mb-0 md:w-1/5 text-left">
