@@ -14,6 +14,10 @@ export default function Events() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  useEffect(() => {
+    document.title = "Leon Hsu | Events";
+  }, []);
+  
   const pastEvents = eventsData.filter(e => e.isPast);
 
   useEffect(() => {
