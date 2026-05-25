@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/contexts/TranslationContext";
 
@@ -10,14 +10,15 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="min-h-screen overflow-hidden -mb-32 pb-32">
-      {/* Hero — fills exactly the viewport, nothing to scroll */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <div className="relative min-h-screen overflow-hidden pb-32">
+      {/* Hero — fills exactly the viewport, with footer overlay space */}
+      <section className="absolute inset-0 flex items-center justify-center overflow-hidden">
         {/* Background image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 z-0"
           style={{ backgroundImage: "url('/Leon-Hsu-Website/home-bg.png')" }}
         />
+
         {/* Dark atmospheric background */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-zinc-800/40 via-background to-background z-0" />
         <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-background/30 z-0" />
