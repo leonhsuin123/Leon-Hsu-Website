@@ -25,7 +25,7 @@ export default function About() {
               className="w-full lg:w-5/12 aspect-[4/5] bg-gradient-to-tr from-zinc-800 to-zinc-900 rounded-lg overflow-hidden border border-border/50 relative shadow-2xl"
             >
               {/* Placeholder artist image */}
-              <div className="absolute inset-0 flex items-center justify-center opacity-30">
+              <div className="absolute inset-0 flex items-center justify-center">
                 <img
                   src="/Leon-Hsu-Website/about.png"
                   alt="Leon Hsu"
