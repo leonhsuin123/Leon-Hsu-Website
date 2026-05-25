@@ -39,9 +39,17 @@ export default function EventCard({ event }: { event: EventItem }) {
       </div>
 
       <div className="md:w-1/5 flex justify-start md:justify-end">
-        <Button variant="outline" className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground">
-          {t('events.tickets')}
-        </Button>
+        {event.ticketUrl && (
+          <Button
+            asChild
+            variant="outline"
+            className="border-accent/30 text-accent hover:bg-accent hover:text-accent-foreground"
+          >
+            <a href={event.ticketUrl} target="_blank" rel="noopener noreferrer">
+              {t('events.tickets')}
+            </a>
+          </Button>
+        )}
       </div>
     </div>
   );
