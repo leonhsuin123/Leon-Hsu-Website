@@ -18,7 +18,7 @@ export const eventsData: EventItem[] = [
     venue: 'Blue Note',
     city: 'New York',
     state: 'NY',
-    isPast: false
+    isPast: true
   },
   {
     id: '2',
@@ -28,7 +28,7 @@ export const eventsData: EventItem[] = [
     venue: 'Smalls Jazz Club',
     city: 'New York',
     state: 'NY',
-    isPast: false
+    isPast: true
   },
   {
     id: '3',
